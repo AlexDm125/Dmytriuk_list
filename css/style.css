@@ -1,0 +1,38 @@
+body{
+    background-color: aqua;
+}
+
+p{
+    background: linear-gradient(blue, yellow);
+    font-size: 50px;
+    color: black;
+}
+
+ul, ol{
+    font-size: 24px;
+    color: blueviolet;
+}
+ul.ul1 li::marker{
+    color: blue;
+}
+
+.u3 li{
+    padding-left: 8px;
+}
+
+@counter-style blacknwhite {
+    system: cyclic;
+    symbols: ◆ ◇;
+    suffix: " ";
+  }
+  @counter-style lower-ukrainian {
+    system: alphabetic;
+    symbols: 'а' 'б' 'в' 'г' 'ґ' 'д' 'е' 'є' 'ж' 'з' 'и' 'і' 'ї' 'й' 'к' 'л' 'м' 'н' 'о' 'п' 'р' 'с' 'т' 'у' 'ф' 'х' 'ц' 'ч' 'ш' 'щ' 'ь' 'ю' 'я';
+    suffix: ') ';
+  }
+  
+  @counter-style emoji {
+    system: cyclic;
+    symbols: "\1F431" "\1F436" "\1F984";
+    suffix: " ";
+  }
